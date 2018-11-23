@@ -1,0 +1,29 @@
+<div>
+
+  <table border="0" cellpadding="0" cellspacing="0" class="tblLineas oferta">
+    
+    <tr class="oferta" >
+      <td class="sub"><div>
+            
+      </div>
+    </td>
+      <td class="sub">
+        <div>
+            {{descripcionCuatrimestre(materia.idCuatrimestre)}}
+        </div>
+      </td>
+      <td class="sub">
+        <div>
+
+      </div>
+    </td>
+    </tr>
+    <tr >
+      <td><input type="checkbox" (click)='pedirHorario()'>{{materia.codigo}}</td>
+      <td>{{materia.descripcion}}</td>      
+      <td>{{materia.creditos}}</td>      
+    </tr>
+    
+  </table>
+  
+</div>

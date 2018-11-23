@@ -1,2 +1,156 @@
+<div class="cuerpo clearfix">
+
+
+    <script language="javascript" type="text/jscript">
+      var SubPeriodo = 0;
+
+    </script>
+
+    <form method="post" action="#" id="aspnetForm">
+      <div>
+        <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/">
+      </div>
+
+      <div>
+
+        <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="6ADB2AB8">
+      </div>
+      <div class="cuerpo clearfix">
+        <div class="barEncab">
+          <h1>
+            Inscripción de Asignaturas</h1>
+          <p class="info">
+            ELIJA SU FORMA DE PAGO en la sección de CAJAS/DETALLES A PAGAR.</p>
+        </div>
+        <div class="relleno clearfix">
+
+          <div id="contentTwoColumn">
+            <div class="col izq">
+              <h2>
+                OFERTA DISPONIBLE</h2>
+              <ul class="leyenda">
+                <li>Canceladas <span class="color azul"></span></li>
+                <li>Obligatorias <span class="color amarillo"></span></li>
+                <li>Sin cupo <span class="color rosa"></span></li>
+              </ul>
+              <div class="scroll ps-container" id="scrolledGridOferta">
+
+                <table border="0" cellpadding="0" cellspacing="0" class="tblLineas oferta" id="TableOfertaMatricula">
+                  <thead class="tblLineas">
+                    <tr>
+                            
+                    </tr>
+                    <tr class="tblLineas2">
+                        <th>Codigo</th>
+                        <th>Descripcion</th>
+                        <th>Cred</th>
+                    </tr>
+                  </thead>
+                  <tbody *ngFor="let materia of materias">
+                      <tr class="oferta" >  
+                            <!-- <tr > -->
+                                    
+                        <td class="sub" colspan="3">
+                            <div>
+                                {{descripcionCuatrimestre(materia.idCuatrimestre)}}
+                            </div>
+                            
+                                <table cellpadding="0" cellspacing="0" class="tblLineas">
+                                    <tr>
+                                        <td><input type="checkbox" (click)='pedirHorario(materia)'>{{materia.codigo}}</td>
+                                        <td>{{materia.descripcion}}</td>      
+                                        <td>{{materia.creditos}}</td>   
+                                    </tr>
+                                </table>
+                            
+                        </td>   
+                <!-- </tr> -->
+
+                      </tr>
+                    <!-- <div class="oferta" *ngFor="let materia of materias">
+                        <tr colspan="3">
+                            <td class="sub">
+                                <div>
+                                    {{descripcionCuatrimestre(materia.idCuatrimestre)}}
+                                </div>
+                            </td>
+                        </tr>
+
+                    </div> -->
+                  </tbody>
+                </table>
+                <!-- <table border="0" cellpadding="0" cellspacing="0" class="tblLineas oferta">
+                    <tr *ngFor="let materia of materias"> 
+                        <app-materias [materia]="materia"></app-materias>      
+                    </tr>
+                </table> -->
+                      
+                <div class="ps-scrollbar-x-rail" style="width: 280px; display: none; left: 0px; bottom: 0px;">
+                  <div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div>
+                </div>
+                <div class="ps-scrollbar-y-rail" style="top: 0px; height: 30px; display: none; right: 0px;">
+                  <div class="ps-scrollbar-y" style="top: 0px; height: 0px;"></div>
+                </div>
+              </div>
+              <!--/Fin .col.izq-->
+            </div>
+
+
+
+            <div class="col der">
+              <h2 class="estilo2">
+                SELECCIONE HORARIO PARA: <span >{{textoMateria}}</span>
+              </h2>
+              <div id="ctl00_contenedorPrincipal_divInformacion" class="divMostrar divMostrarStyle">
+                <input type="hidden" id="codigoCursoSeleccionOferta">
+                <input type="hidden" id="descripcionCursoSeleccionOferta">
+                <span id="ctl00_contenedorPrincipal_lblMensajeUsuario">Estudiante regular, su Fecha de Matrícula es:
+                  23/08/2018 9:00AM al 23/08/2018 11:59PM</span>
+              </div>
+              <div class="scroll2 ps-container" id="divOfertaAcademica">
+                <div class="ps-scrollbar-x-rail" style="width: 574px; display: none; left: 0px; bottom: 0px;">
+                  <div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div>
+                </div>
+                <div class="ps-scrollbar-y-rail" style="top: 0px; height: 0px; display: none; right: 0px;">
+                  <div class="ps-scrollbar-y" style="top: 0px; height: 0px;">
+                  </div>
+                </div>
+              </div>
+              <div id="ImgLoading" class="divImgLoading noDisplay">
+                <div class="lblLoading">
+                  <span id="spLblMensajeAccion">Cargando</span></div>
+                <div class="imgLoading">
+                  <img src="assets/Matricula_files/loader.gif" style="height: 100px;"></div>
+              </div>
+            </div>
+          </div>
+          <div id="divResumenMatricula">
+            <div class="top clearfix">
+              <h1>RESUMEN DE MATRÍCULA</h1>
+              <ul>
+                <li><a class="impr" href="#" target="_blank">Imprimir</a></li>
+                <li><a class="cerrar" href="#" onclick="ocultarToolTip();">Cerrar</a></li>
+              </ul>
+            </div>
+            <!--<div class="info clearfix">
+                    <ul>
+         	            <li>Pendiente de pago <span class="color violeta"></span></li>
+                        <li>Cursando <span class="color azul"></span></li>
+                        <li>Lista de espera <span class="color amarillo"></span></li>
+                        <li>Canceladas <span class="color rosa"></span></li>
+                    </ul>
+                </div>-->
+            <div id="divmensaje">
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+
+
+
+  </div>
+
+
 
 <router-outlet></router-outlet>
