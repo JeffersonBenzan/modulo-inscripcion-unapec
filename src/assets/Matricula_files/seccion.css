@@ -1,0 +1,87 @@
+
+/*- -*/
+.cuerpo{
+	font-family:Arial, Helvetica, sans-serif;
+	color:#4b4b4b;
+	font-size:12px;
+}
+.barEncab{
+	overflow:hidden;
+	background:#dae2e6;
+	padding:7px 38px;
+}
+.barEncab h1{
+	float:left;
+	margin:0;
+	font-weight:normal;
+	color:#424242;
+	font-size:27px;
+	font-family: 'open_sanslight';
+}
+.relleno{
+	padding:20px 38px;
+}
+.col{
+	position:relative; float:left; min-height:100px; padding:10px; margin:20px 0 0 0; }
+	.col.izq{ width:280px; }
+	.col.der{ width:574px; padding-right:0; }
+	
+/*------------------
+	Estilos de tablas 
+------------------*/
+
+/* #1 */
+.tblCebra{ width:100%; background:#f5f4f4; text-transform:uppercase; font-size:11px; margin-bottom:30px;}
+	.tblCebra th{ background:#009dcd; padding:8px 5px; color:#fff; font-size:12px; text-align:left;}
+	.tblCebra .th{ background:#009dcd; padding:8px 5px; color:#fff; font-size:12px; text-align:left;}
+	.tblCebra td{ padding:8px 5px;}
+	.tblCebra tr.cebra{ background:#e9e9e9; }
+
+/* #2 */
+
+.tblLineas{ width:98%; font-size:10px; margin-bottom:30px;}
+	.tblLineas th{ background:#009dcd; padding:8px 5px; color:#fff; font-size:10px; text-align:left; text-transform:uppercase;}
+	.tblLineas .th{ background:#009dcd; padding:8px 5px; color:#fff; font-size:12px; text-align:left; text-transform:uppercase;}
+	.tblLineas td{ padding:8px 5px;}
+	.tblLineas tr td{ border-bottom:1px solid #e4e4e4;}
+	
+.tblLineas2{ width:100%; font-size:10px; margin-bottom:30px;}
+	.tblLineas2 th{ background:#009dcd; padding:8px 5px; color:#fff; font-size:12px; text-align:left; text-transform:uppercase;}
+	.tblLineas2 .th{ background:#009dcd; padding:8px 5px; color:#fff; font-size:12px; text-align:left; text-transform:uppercase;}
+	.tblLineas2 td{ padding:8px 5px;}
+	.tblLineas2 tr td{ border-bottom:1px solid #e4e4e4;}
+
+.tblLineas3{ width:100%; font-size:10px; margin-bottom:30px;}
+	.tblLineas3 th{ background:#009dcd; padding:8px 2px; color:#fff; font-size:10px; text-transform:uppercase;}
+	.tblLineas3 .th{ background:#009dcd; padding:8px 5px; color:#fff; font-size:12px; text-align:left; text-transform:uppercase;}
+	.tblLineas3 td{ padding:8px 5px;}
+	.tblLineas3 tr td{ border-bottom:1px solid #e4e4e4;}	
+	
+.tblLineas4{ width:100%; font-size:10px; margin-bottom:5px;}
+	.tblLineas4 th{ background:#009dcd; padding:8px 5px; color:#fff; font-size:12px; text-align:left; text-transform:uppercase;}
+	.tblLineas4 .th{ background:#009dcd; padding:8px 5px; color:#fff; font-size:12px; text-align:left; text-transform:uppercase;}
+	.tblLineas4 td{ padding:8px 5px;}
+	.tblLineas4 tr td{ border-bottom:1px solid #e4e4e4;}
+/*-/-*/
+
+h2.estilo1{ 
+	color:#d08f11; font-size:14px; padding-bottom:3px; margin:25px 0 25px 0; text-transform:uppercase; border-bottom:2px solid #80a4b6;
+}
+h2.estilo2{ 
+	color:#555555; font-size:14px; padding-bottom:3px; margin:25px 0 25px 0; text-transform:uppercase; border-bottom:2px solid #dfae18;
+}
+h2.noLinea{ border:none;}
+
+/* colores de referencia para las leyendas */
+
+span.color{
+	display:inline-block; width:13px; height:13px; border-radius:3px; margin:0 0 0 5px;
+}
+	span.color.violeta{ background:#b774d6;}
+	span.color.azul{ background:#C10A0A;}
+	span.color.amarillo{ background:#ffd700;}
+	span.color.rosa{ background:#A8A8A8;}
+/*-/-*/
+
+
+

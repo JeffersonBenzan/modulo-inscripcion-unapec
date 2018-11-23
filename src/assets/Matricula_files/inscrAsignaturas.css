@@ -1,0 +1,166 @@
+.barEncab .info{
+	position:absolute;
+	top:10px; right:38px;
+	background:#cdc4a2 url(../../img/general/icnAlerta.png) no-repeat 5px 5px;
+	padding:5px 9px 5px 30px;
+	margin:0;
+	border:#ecf4f8 1px solid;
+	text-transform:uppercase;
+	color:#333;
+	font-size:14px;
+	font-family: 'open_sanssemibold';
+}
+.form{
+	background:#f4f4f4; font-family: 'open_sanssemibold'; padding:10px; font-size:13px;
+}
+.form td{ padding:3px 5px; vertical-align:top;
+}
+.form label{ float:right;
+}
+.form select{ width:100%; border:none; padding:2px 4px; font-family: 'open_sanssemibold'; color:#555;
+}
+.form a.btnResumen{
+	float:right;
+	display:inline-block;
+	background:#6b935c url(../../img/general/lupa.png) no-repeat 180px center;
+	padding:5px 35px 5px 10px; margin-top:8px;
+	color:#fff;
+	text-decoration:none;
+	font-family: 'open_sanssemibold';
+	box-shadow:1px 1px 1px #666;
+	cursor:pointer;
+}
+	.form a.btnResumen:hover{ background-color:#618b52;
+	}
+
+.form .datos{
+	float:right;
+	background:#fff; 
+	border:#aeacac 1px solid;
+	border-radius:3px;
+	font-size:11px;
+	padding:2px;
+}
+.datos td{
+	padding:0 5px;
+}
+.datos td strong{font-family: 'open_sansbold';
+}
+
+/**/
+
+h2.estilo2{ margin-top:7px;
+}
+h2.estilo2 span{
+	color:#0091bd; margin-left:15px;
+}
+
+
+/* Columna Izquierda */
+
+.col.izq{ background:#f4f4f4;}
+.col.izq h2{
+	font-size:14px; text-align:center;
+}
+.leyenda{ border:1px solid #009dcd; background:#fff; list-style:none; margin:0 0 10px 0; padding:5px 9px 5px 3px; font-size:11px;
+}
+	.leyenda li{ display:inline-block; padding:0 6px; line-height:10px;}
+	.leyenda li+li{ border-left:1px solid #a1a1a1;}
+	span.color{ width:11px; height:11px; margin:0 0 0 5px;}
+
+/**/
+.scroll{
+	/*overflow:auto;
+	max-height:400px;*/
+	width:100%;
+	overflow:hidden !important;
+	max-height:400px;
+	position:relative;
+}
+.scroll2{
+	width:100%;
+	overflow:hidden !important;
+	max-height:422px;
+	position:relative;	
+}
+.oferta th{ text-transform:none; font-size:11px;}
+.oferta .th{ text-transform:none; font-size:11px;}
+.oferta td{ padding:3px; border-bottom-color:#bbddeb !important; text-align:left;
+}
+.oferta td+td{ text-align:left;}
+.oferta td.sub{ border:none; padding-top:7px;
+}
+.oferta td.sub div{
+	background:#3f5674; color:#fff; font-size:11px; text-align:center; margin:0 -3px; padding:3px;
+}
+.per-ano{text-align:left !important }
+
+.tableMensajeExpiraSession {
+    background: none repeat scroll 0 0 #ccc;
+    color: #555555;
+    font-size: 13px;
+    font-weight: bold;
+    height: 65px;
+    text-align: center;
+    width: 100%;
+    line-height:65px;
+}
+
+.divMostrarStyle{
+    background: none repeat scroll 0 0 #ccc;
+    color: #555555;
+    font-size: 13px;
+    font-weight: bold;
+    /*height: 65px;*/
+    text-align: center;
+    width: 100%;
+    line-height:65px;
+}
+
+.imgMostrar
+{
+	display:inline;
+}
+.imgOcultar
+{
+	display:none;
+}
+#divmensajeMatricula {
+  background-color: #ECE9D8;
+  border-style:double;
+   position: absolute; 
+   visibility: hidden; 
+   padding: 5px;
+   width:200px;
+  z-index: 100; 
+}
+
+.divImgLoading{text-align: center; width: 100%; float: right; margin-top: 20px;}
+
+.lblLoading{height: 100px; line-height: 100px; font-size: 30px; float: right; text-align: left; width: 50%;}
+
+.imgLoading{width: 30%; float: right;}
+
+.noDisplay{ display:none;}
+
+.displayInherits{ display:inherit !important;}
+
+#divResumenMatricula {
+  background-color: #ffffff;
+  margin: 0 auto; 
+  width: 950px;
+  position:absolute;
+  top:0px;
+  left:0px;
+  display:none;
+  padding:5px;
+}
+
+#imgResumen{cursor:pointer;}
+
+.CeldaHorariosCancelado{color:#C10A0A;	}
+
+.CeldaHorariosSinCupo{color:#a8a8a8;}
+
+input[type=checkbox]{ cursor:pointer; }
+input[type=checkbox][disabled]{ cursor:not-allowed;}

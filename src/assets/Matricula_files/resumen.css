@@ -1,0 +1,117 @@
+.wpr{
+	border:3px solid #c1d1da;
+	padding:25px 15px;
+	border-radius:5px;
+}
+.top{
+	border-bottom:3px solid #009dcd;
+}
+.top h1{
+	float:left; margin:0; padding:0 0 7px 0; font-weight:normal; color:#757575; font-family: 'open_sanslight';
+}
+.top ul{
+	float:right;
+	text-transform:uppercase;
+	margin:0;
+}
+.top li{
+	float:left;
+	list-style:none;
+	margin-left:12px;
+}
+.top ul a{
+	display:block;
+	padding:8px 10px 8px 40px;
+	text-decoration:none;
+	color:#565656;
+	font-family: 'open_sanssemibold';
+}
+.top ul a.cerrar{ background:#f4f4f4 url(../../img/resumen-matr/cerrar.png) no-repeat 10px 7px;
+}
+.top ul a.impr{ background:#f4f4f4 url(../../img/resumen-matr/impr.png) no-repeat 10px 7px;
+}
+
+.impr 
+{
+	background:#f4f4f4 url(../../img/resumen-matr/impr.png) no-repeat 10px 7px;
+    display:block;
+	padding:8px 10px 8px 40px;
+	text-decoration:none;
+	color:#565656;
+	font-family: 'open_sanssemibold';
+	border:none;
+	cursor:pointer;
+}
+
+.top label{
+	float:left; margin:0; padding:0 0 7px 0; font-weight:normal; color:#757575; font-family: 'open_sanslight';
+}
+
+/**/
+
+.info{ background:#f4f4f4; margin:15px 0; padding:10px; font-family: 'open_sanssemibold';
+}
+.info p{ margin:0; float:left; line-height:30px;
+}
+.info p span{ color:#009dcd; margin-left:5px;
+}
+.info ul{ float:right; border:1px solid #009dcd; border-radius:3px; list-style:none; margin:0; padding:5px 9px 5px 3px; font-size:12px;
+}
+.info li{ display:inline-block; padding:0 7px; line-height:10px;
+}
+.info li+li{ border-left:1px solid #a1a1a1;
+}
+
+/**/
+.divResumenMatricula {
+  background-color: #ffffff;
+  margin: 0 auto; 
+  position:absolute;
+  top:0px;
+  left:0px;
+}
+
+.pb5{ padding-bottom:5px;}
+.p10{ padding:10px;}
+
+#WindowLoad {
+    position: absolute;
+    top: 200px;
+    width: 100%;
+}
+
+.divContentDetalleOferta {
+    background: none repeat scroll 0 0 #ffffff;
+    border-radius: 5px;
+    margin: -5% auto;
+    padding: 0 0 7px;
+    width: 38%;
+    z-index:999;
+}
+
+.barraTopDiv {
+    background: none repeat scroll 0 0 #9E9E9E;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    height: 30px;
+}
+
+
+.barraTopDiv span {
+    background: url("../../img/exit.png") no-repeat scroll 9px center #c10a0a;
+    border-top-right-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+    float: right;
+    line-height: 30px;
+    text-align: center;
+    width: 30px;
+}
+
+.divContentDetalleOferta > table {
+    margin: 10px;
+}
+
+#tableDetalle span {
+    font-weight: bold;
+}

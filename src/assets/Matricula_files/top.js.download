@@ -1,0 +1,17 @@
+﻿function RutinaEnviaEmail() {
+    document.location.href = 'mailto:unapec@unapec.edu.do';
+}
+
+function RutinaRedirigeAyuda() {
+    window.open('http://preguntas.unapec.edu.do/', '_blank');
+}
+
+function RutinaRedirigeSalir() {
+    //window.location.href = 'default.aspx';
+    window.open('../auth/logout/Default.aspx', '_parent');
+}
+
+function RutinaRedirigeSalirIF() {
+    //window.open('../default.aspx', '_parent');
+    window.open('../auth/logout/Default.aspx', '_parent');
+}
