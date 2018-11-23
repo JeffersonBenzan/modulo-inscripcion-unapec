@@ -16,7 +16,7 @@ export class HorariosService {
   }
 
   setHorario(horario: IHorario): Observable<IHorario> {
-    return this.http.post<IHorario>(this.apiURL, horario);
+    return this.http.post<IHorario>(this.apiURL + '/' + horario.id,horario);
   }
 
   deleteHorario(horarioId: string): Observable<IHorario> {

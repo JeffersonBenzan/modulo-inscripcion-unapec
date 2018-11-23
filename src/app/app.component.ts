@@ -47,6 +47,16 @@ export class AppComponent implements OnInit {
 
   }
 
+  inscribir(horario) {
+    this.horariosService.setHorario(horario)
+    .subscribe(res => {
+      console.log(res)
+    },
+      error => console.error('Aqui hubo un error: ', error));
+
+  }
+  
+
   mostrar(mate) {
     console.log(mate);
   }

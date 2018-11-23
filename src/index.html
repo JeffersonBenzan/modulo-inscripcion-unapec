@@ -3,123 +3,127 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-  <meta charset="utf-8">
-  <title>Matriculacion</title>
-  <base href="/">
+    <meta charset="utf-8">
+    <title>Matriculacion</title>
+    <base href="/">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.1/dist/semantic.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.1/dist/semantic.min.js"></script>
+    <script src="scripts.js"></script>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta http-equiv="expires" content="-1">
-  <link rel="stylesheet" type="text/css" href="assets/Matricula_files/general.css">
-  <link rel="stylesheet" type="text/css" href="assets/Matricula_files/portada.css">
-  <link rel="stylesheet" type="text/css" href="assets/Matricula_files/tipografia.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="expires" content="-1">
+    <link rel="stylesheet" type="text/css" href="assets/Matricula_files/general.css">
+    <link rel="stylesheet" type="text/css" href="assets/Matricula_files/portada.css">
+    <link rel="stylesheet" type="text/css" href="assets/Matricula_files/tipografia.css">
 
-  <script async="" src="assets/Matricula_files/analytics.js"></script>
-  <script type="text/javascript" src="assets/Matricula_files/jquery.js"></script>
-  <script type="text/javascript" src="assets/Matricula_files/general.js"></script>
-  <script type="text/javascript" src="assets/Matricula_files/menuOption.js"></script>
-  <script type="text/javascript" src="assets/Matricula_files/top.js"></script>
+    <script async="" src="assets/Matricula_files/analytics.js"></script>
+    <script type="text/javascript" src="assets/Matricula_files/jquery.js"></script>
+    <script type="text/javascript" src="assets/Matricula_files/general.js"></script>
+    <script type="text/javascript" src="assets/Matricula_files/menuOption.js"></script>
+    <script type="text/javascript" src="assets/Matricula_files/top.js"></script>
 
 
-  <meta http-equiv="expires" content="-1">
-  <meta http-equiv="Last-Modified" content="0">
-  <meta http-equiv="Cache-Control" content="no-cache">
-  <meta http-equiv="Cache-Control" content="no-store">
-  <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="expires" content="-1">
+    <meta http-equiv="Last-Modified" content="0">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-store">
+    <meta http-equiv="Pragma" content="no-cache">
 
-  <link rel="stylesheet" type="text/css" href="assets/Matricula_files/general.css">
-  <link rel="stylesheet" type="text/css" href="assets/Matricula_files/seccion.css">
-  <link rel="stylesheet" type="text/css" href="assets/Matricula_files/inscrAsignaturas.css">
-  <link type="text/css" rel="stylesheet" href="assets/Matricula_files/resumen.css">
-  <link rel="stylesheet" type="text/css" href="assets/Matricula_files/tipografia(1).css">
-  <link href="assets/Matricula_files/perfect-scrollbar.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="assets/Matricula_files/general.css">
+    <link rel="stylesheet" type="text/css" href="assets/Matricula_files/seccion.css">
+    <link rel="stylesheet" type="text/css" href="assets/Matricula_files/inscrAsignaturas.css">
+    <link type="text/css" rel="stylesheet" href="assets/Matricula_files/resumen.css">
+    <link rel="stylesheet" type="text/css" href="assets/Matricula_files/tipografia(1).css">
+    <link href="assets/Matricula_files/perfect-scrollbar.css" rel="stylesheet" type="text/css">
 
-  <script src="assets/Matricula_files/jquery-1.10.1.js" type="text/javascript"></script>
+    <script src="assets/Matricula_files/jquery-1.10.1.js" type="text/javascript"></script>
 
-  <script src="assets/Matricula_files/jquery-ui.js" type="text/javascript"></script>
+    <script src="assets/Matricula_files/jquery-ui.js" type="text/javascript"></script>
 
-  <script src="assets/Matricula_files/perfect-scrollbar.js" type="text/javascript"></script>
+    <script src="assets/Matricula_files/perfect-scrollbar.js" type="text/javascript"></script>
 
-  <script src="assets/Matricula_files/jquery.mousewheel.js" type="text/javascript"></script>
+    <script src="assets/Matricula_files/jquery.mousewheel.js" type="text/javascript"></script>
 
-  <script src="assets/Matricula_files/jsMatricula.js" type="text/javascript" language="javascript"></script>
+    <script src="assets/Matricula_files/jsMatricula.js" type="text/javascript" language="javascript"></script>
 
 </head>
 
 <body style="">
-  <div id="top" class="clearfix">
-    <div id="cab">
-      <a class="logo">
-        <img src="assets/Matricula_files/logo.png"></a>
-      <ul class="links">
-        <li><a href="" onclick="RutinaEnviaEmail();">Contacto</a></li>
-        <li><a href="#" onclick="RutinaRedirigeAyuda();">Ayuda</a></li>
-      </ul>
-      <ul class="login">
-        <li>
-          <ul>
-            <li id="ctl00_cifCli"><span>Grupo:</span> Grupo 3</li>
-            <li id="ctl00_nombCli"><span>NOMBRE:</span> Modulo de Inscripción</li>
-
-            <li id="ctl00_nivelCli"><span>Plan:</span> ISO10</li>
-            <li id="ctl00_indAcuCli"><span>IA:</span> 0.00</li>
-            <li id="ctl00_indCuaCli"><span>IC:</span> 0.00</li>
-          </ul>
-        </li>
-        <li class="salir"><a href="#" onclick="RutinaRedirigeSalirIF();">Salir</a></li>
-      </ul>
-      <!--Menu-->
-      <div class="wprMenu">
-
-        <ul>
-          <li class="visible"><a href="#" onclick="RutinaRedirecSubTopInicio();">INICIO</a></li>
-          <li><a href="#">Inscripción</a>
-            <ul>
-
-              <li><a href="#" id="ctl00_lnkMatricula">Inscripción asignatura</a></li>
-              <li><a href="#" onclick="RutinaRedirecResumenMatricula();">Resumen de Inscripción</a></li>
+    <div id="top" class="clearfix">
+        <div id="cab">
+            <a class="logo">
+                <img src="assets/Matricula_files/logo.png"></a>
+            <ul class="links">
+                <li><a href="" onclick="RutinaEnviaEmail();">Contacto</a></li>
+                <li><a href="#" onclick="RutinaRedirigeAyuda();">Ayuda</a></li>
             </ul>
-          </li>
-          <li><a href="#">Académico</a>
-            <ul>
-              <li><a href="#" onclick="RutinaRedirecNotasPeriodo();">Notas por Período</a></li>
-              <li><a href="#" onclick="RutinaRedirecNotasHistorico();">Notas Histórico</a></li>
+            <ul class="login">
+                <li>
+                    <ul>
+                        <li id="ctl00_cifCli"><span>Grupo:</span> Grupo 3</li>
+                        <li id="ctl00_nombCli"><span>NOMBRE:</span> Modulo de Inscripción</li>
 
-              <li><a href="#" onclick="RutinaRedirecRetiroAsignatura();">Retiro Asignatura</a></li>
+                        <li id="ctl00_nivelCli"><span>Plan:</span> ISO10</li>
+                        <li id="ctl00_indAcuCli"><span>IA:</span> 0.00</li>
+                        <li id="ctl00_indCuaCli"><span>IC:</span> 0.00</li>
+                    </ul>
+                </li>
+                <li class="salir"><a href="#" onclick="RutinaRedirigeSalirIF();">Salir</a></li>
             </ul>
-          </li>
-          <li><a href="#">Gestiones</a>
-            <ul>
+            <!--Menu-->
+            <div class="wprMenu">
 
-              <li><a href="#" onclick="RutinaRedirecSolicitudes();">Solicitudes</a></li>
+                <ul>
+                    <li class="visible"><a href="#" onclick="RutinaRedirecSubTopInicio();">INICIO</a></li>
+                    <li><a href="#">Inscripción</a>
+                        <ul>
 
-            </ul>
-          </li>
-          <li><a href="#">Cajas</a>
-            <ul>
-              <li><a href="#" onclick="RutinaRedirecDetallePagar();">Detalle del Primer Pago</a></li>
-              <li><a href="#" onclick="RutinaRedirecSaldoPagarMVI();">Saldos a Pagar</a></li>
-              <li><a href="#" onclick="RutinaRedirecSaldoFavorMVI();">Saldos a Favor</a></li>
-              <li><a href="#" onclick="RutinaRedirecHistoricoPagosMVI();">Histórico de Pagos</a></li>
-              <!--<li><a href="#" onclick="RutinaRedirecBecasCuentasCorportativas();">Cuentas Corporativas</a></li>-->
-            </ul>
-          </li>
+                            <li><a href="#" id="ctl00_lnkMatricula">Inscripción asignatura</a></li>
+                            <li><a href="#" onclick="RutinaRedirecResumenMatricula();">Resumen de Inscripción</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Académico</a>
+                        <ul>
+                            <li><a href="#" onclick="RutinaRedirecNotasPeriodo();">Notas por Período</a></li>
+                            <li><a href="#" onclick="RutinaRedirecNotasHistorico();">Notas Histórico</a></li>
 
-          <li><a href="https://estudiantil.unapec.edu.do/" target="_blank">Clase</a></li>
+                            <li><a href="#" onclick="RutinaRedirecRetiroAsignatura();">Retiro Asignatura</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Gestiones</a>
+                        <ul>
 
-          <li><a href="https://estudiantil.unapec.edu.do/" target="_blank">Información</a></li>
-        </ul>
+                            <li><a href="#" onclick="RutinaRedirecSolicitudes();">Solicitudes</a></li>
 
-      </div>
+                        </ul>
+                    </li>
+                    <li><a href="#">Cajas</a>
+                        <ul>
+                            <li><a href="#" onclick="RutinaRedirecDetallePagar();">Detalle del Primer Pago</a></li>
+                            <li><a href="#" onclick="RutinaRedirecSaldoPagarMVI();">Saldos a Pagar</a></li>
+                            <li><a href="#" onclick="RutinaRedirecSaldoFavorMVI();">Saldos a Favor</a></li>
+                            <li><a href="#" onclick="RutinaRedirecHistoricoPagosMVI();">Histórico de Pagos</a></li>
+                            <!--<li><a href="#" onclick="RutinaRedirecBecasCuentasCorportativas();">Cuentas Corporativas</a></li>-->
+                        </ul>
+                    </li>
+
+                    <li><a href="https://estudiantil.unapec.edu.do/" target="_blank">Clase</a></li>
+
+                    <li><a href="https://estudiantil.unapec.edu.do/" target="_blank">Información</a></li>
+                </ul>
+
+            </div>
+        </div>
     </div>
-  </div>
-  <!------------------>
-  <!----- CUERPO ----->
-  <!------------------>
+    <!------------------>
+    <!----- CUERPO ----->
+    <!------------------>
 
-  <app-root></app-root>
-  
+    <app-root></app-root>
+
 </body>
 
 
