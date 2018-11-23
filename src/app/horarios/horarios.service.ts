@@ -8,19 +8,19 @@ import { IHorario } from './horario';
 })
 export class HorariosService {
 
-  private apiURL = this.baseUrl + 'api/horarios';
+  private apiURL = this.baseUrl + 'api/horarios/';
   constructor(private http: HttpClient, @Inject('BASE_URL') private baseUrl: string) { }
 
   getHorarios(materiaId: string): Observable<IHorario[]> {
-    return this.http.get<IHorario[]>(this.apiURL + '/' + materiaId);
+    return this.http.get<IHorario[]>(this.apiURL + materiaId);
   }
 
   setHorario(horario: IHorario): Observable<IHorario> {
-    return this.http.post<IHorario>(this.apiURL + '/' + horario.id,horario);
+    return this.http.post<IHorario>(this.apiURL, {"idHorario": horario.id});
   }
 
   deleteHorario(horarioId: string): Observable<IHorario> {
-    return this.http.delete<IHorario>(this.apiURL + '/' + horarioId);
+    return this.http.delete<IHorario>(this.apiURL + horarioId);
   }
 
   updateHorario(horario: IHorario): Observable<IHorario> {

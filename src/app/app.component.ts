@@ -48,9 +48,12 @@ export class AppComponent implements OnInit {
   }
 
   inscribir(horario) {
+    horario.estado = !horario.estado;
     this.horariosService.setHorario(horario)
     .subscribe(res => {
-      console.log(res)
+      console.log("Respuesta: ", res)
+      let mensaje = horario.estado ? " inscrita " : " eliminada ";
+      alert("Materia" + mensaje+ "satisfactoriamente")
     },
       error => console.error('Aqui hubo un error: ', error));
 

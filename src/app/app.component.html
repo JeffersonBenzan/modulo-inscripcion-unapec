@@ -114,77 +114,60 @@
                                 </div>
                             </div>
                         </div>
-                        ___________________________________________________
-                        <div class="ui segment">
-                            <table class="ui celled table" id="tabla">
-                                <thead>
-                                    <tr>
-                                        <th> </th>
-                                        <th>AULA</th>
-                                        <th>GRUPO</th>
-                                        <th>LUN</th>
-                                        <th>MAR</th>
-                                        <th>MIER</th>
-                                        <th>VIE</th>
-                                        <th>SAB</th>
-                                        <th>DOM</th>
-                                        <th>MODULO</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr *ngFor="let horario of horarios">
-                                        <td> <input type="checkbox" (click)='inscribir(horario)'> </td>
-                                        <td> {{horario.aula}} </td>
-                                        <td> {{horario.grupo}} </td>
-                                        <td> {{horario.lun}} </td>
-                                        <td> {{horario.mar}} </td>
-                                        <td> {{horario.mier}} </td>
-                                        <td> {{horario.jue}} </td>
-                                        <td> {{horario.vie}} </td>
-                                        <td> {{horario.sab}} </td>
-                                        <td> {{horario.dom}} </td>
-                                        <td> {{horario.modulo}} </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-
-                        <!--Clase del Modal de registro-->
-                        <div id="gmm" class="ui modal">
-                            <i class="close icon"></i>
-                            <div class="header">
-                                Add Todo Item
-                            </div>
-
-                            <div class="ui segment">
-
-                                <div class="ui form">
-                                    <div class="two fields">
-                                        <div class="field">
-                                            <label>Id</label>
-                                            <input type="number" placeholder="Id" id="id" required>
-                                        </div>
-                                        <div class="field">
-                                            <label>Todo item</label>
-                                            <input type="text" placeholder="Todo item" id="todoitem" required>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="two fields">
-                                        <div class="field">
-                                            <label>Created</label>
-                                            <input type="date" placeholder="Date" id="created">
-                                        </div>
-                                    </div>
 
 
-                                </div>
-
-                            </div>
-
-
-                        </div>
+                        <table border="0" cellpadding="0" cellspacing="0" class="tblLineas oferta">
+                            <thead class="tblLineas">
+                                <tr>
+                                    <th> </th>
+                                    <th>
+                                        <h4>AULA</h4>
+                                    </th>
+                                    <th>
+                                        <h4>GRUPO</h4>
+                                    </th>
+                                    <th>
+                                        <h4>LUN</h4>
+                                    </th>
+                                    <th>
+                                        <h4>MAR</h4>
+                                    </th>
+                                    <th>
+                                        <h4>MIER</h4>
+                                    </th>
+                                    <th>
+                                        <h4>JUE</h4>
+                                    </th>
+                                    <th>
+                                        <h4>VIE</h4>
+                                    </th>
+                                    <th>
+                                        <h4>SAB</h4>
+                                    </th>
+                                    <th>
+                                        <h4>DOM</h4>
+                                    </th>
+                                    <th>
+                                        <h4>MODULO</h4>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let horario of horarios">
+                                    <td> <input type="checkbox" name="horarios" (click)='inscribir(horario)'> </td>
+                                    <td> {{horario.aula}} </td>
+                                    <td> {{horario.grupo}} </td>
+                                    <td> {{horario.lun}} </td>
+                                    <td> {{horario.mar}} </td>
+                                    <td> {{horario.mier}} </td>
+                                    <td> {{horario.jue}} </td>
+                                    <td> {{horario.vie}} </td>
+                                    <td> {{horario.sab}} </td>
+                                    <td> {{horario.dom}} </td>
+                                    <td> {{horario.modulo}} </td>
+                                </tr>
+                            </tbody>
+                        </table>
 
                         <div id="mmt" class="ui basic modal">
                             <div class="ui icon header">
@@ -199,7 +182,8 @@
                                 </div>
                             </div>
                         </div>
-                        ----------------------------------------------------------------------------------------
+
+
 
                         <div id="ImgLoading" class="divImgLoading noDisplay">
                             <div class="lblLoading">
