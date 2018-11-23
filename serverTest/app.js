@@ -269,7 +269,7 @@ app.get('/api/horarios/:id', function(req, res, next) {
   var itemId = req.params.id;
   console.log(req.params)
   console.log('Get ' + req.params.id)
-  res.send('Get ' + req.params.id);
+  res.send(horarios);
 });
 
 app.get('/items/:id', function(req, res, next) {

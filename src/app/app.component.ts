@@ -18,18 +18,7 @@ export class AppComponent implements OnInit {
   public horarios: IHorario[];
   public textoMateria: string;
   public cuatrimestres: IMateria[];
-  public cuatrimestre1: IMateria[];
-  public cuatrimestre2: IMateria[];
-  public cuatrimestre3: IMateria[];
-  public cuatrimestre4: IMateria[];
-  public cuatrimestre5: IMateria[];
-  public cuatrimestre6: IMateria[];
-  public cuatrimestre7: IMateria[];
-  public cuatrimestre8: IMateria[];
-  public cuatrimestre9: IMateria[];
-  public cuatrimestre10: IMateria[];
-  public cuatrimestre11: IMateria[];
-  public cuatrimestre12: IMateria[];
+
 
 
   constructor(private materiasService: MateriasService, private horariosService: HorariosService) { }
@@ -46,14 +35,13 @@ export class AppComponent implements OnInit {
         error => console.error('Aqui hubo un error: ', error));
   }
 
-
-
-
   pedirHorario(materia) {
     this.horariosService.getHorarios(materia.id)
     .subscribe(horarioWS => {
-      this.textoMateria = materia.descripcion;
+      this.textoMateria = materia.codigo +" - "+ materia.descripcion;
       this.horarios = horarioWS
+      console.log("Me llegaron estos horarios: ")
+      console.log(this.horarios)
     },
       error => console.error('Aqui hubo un error: ', error));
 
