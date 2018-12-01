@@ -5,4 +5,5 @@ export interface IMateria {
     codigo: string,
     descripcion: string,
     creditos: number,
+    seleccionado: boolean
 }

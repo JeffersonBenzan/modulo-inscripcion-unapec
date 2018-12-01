@@ -12,4 +12,5 @@ export interface IHorario {
     sab: string,
     dom: string,
     modulo: number,
+    seleccionado: boolean
 }

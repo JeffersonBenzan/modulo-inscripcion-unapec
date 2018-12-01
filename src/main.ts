@@ -9,7 +9,6 @@ export function getBaseUrl() {
   return 'http://192.227.84.96:8000/';
 }
 
-
 const providers = [
   { provide: 'BASE_URL', useFactory: getBaseUrl, deps: [] }
 ];
